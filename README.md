@@ -1,2 +1,3 @@
 # Leashed_Public
-public updates to the Leashed App
+
+details comming soon
