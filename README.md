@@ -1,7 +1,7 @@
 # Leashed
-
+<img src="https://media.giphy.com/media/S8lbi2cusC5gVC0xOS/giphy.gif"/>
+<br>
 <p float="left">
-  <img src="https://media.giphy.com/media/S8lbi2cusC5gVC0xOS/giphy.gif"/>
   <img src="https://media.giphy.com/media/RKMMj20eRHONfImd0L/giphy.gif"/>
   <img src="https://media.giphy.com/media/S6Zdj4EiS99DlVZuDS/giphy.gif"/>
   <img src="https://media.giphy.com/media/d5qOvltp866jRzktDZ/giphy.gif"/>
