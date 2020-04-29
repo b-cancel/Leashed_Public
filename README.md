@@ -9,7 +9,7 @@
 
 Create a digital Leash between your Bluetooth Devices and your phone to avoid loss. Prevention > Recovery.
 <br>
------GOALS-----
+###GOALS
 <br>
 I wanted to be able to track any Bluetooth device. This meant I had to implement a signal
 recognition pairing step. This is required because some devices only have a MAC address,
@@ -21,7 +21,7 @@ connected or disconnected from that Bluetooth device. If they were connected to 
 wanted to be able to let the user leash to it at a certain distance. The final step was to be able to
 help the user find their device when they were connected to it because the device maybe in range but under a pile of clothing or under the bed.
 <br>
------BLUETOOTH DETAILS-----
+###BLUETOOTH DETAILS
 <br>
 A lot of little things made this project seem simple but actually be quite complicated. The
 first of those is that the Bluetooth spec is massive and not really all that consistent, it's full of
@@ -51,7 +51,7 @@ emit 250 times in a minute, others only 25 times.
 Then you can factor in the limitation of most Bluetooth receivers. They can only receive
 signals sequentially and at a certain speed [atleast with the Bluetooth Library I was using]. So the more devices there are, they longer it might take to hear back from all of them. Additionally, you don't hear back from them in order, it's all random. Suppose you have 2 identical devices, device A and B. After 5 minutes you might hear back from A 200 times and from B only 100 even though they were in the exact same location with the same exact level of interference.
 <br>
------OTHERS RESEARCH-----
+###OTHERS RESEARCH
 <br>
 Others research primarily focused on locating the device's position. Ultimately what it
 came down to is that this is really hard. Most people that attempted it used static Bluetooth
@@ -59,7 +59,7 @@ receiving towers with known positions and even then their results were not great
 because they didn't keep in mind Bluetooth signal degradation and oscillation. The ones that
 were partially successful were only so because they placed the static towers close enough to the bluetooth device so that the RSSI signal degradation problem was not an issue.
 <br>
------MY RESEARCH-----
+###MY RESEARCH
 <br>
 After realizing the above I just wanted to see If it was possible for me to extend how far I
 could usefully estimate a device's distance since it was clear that estimating position was
@@ -69,7 +69,7 @@ interval between emissions. So I combined this data and was able to successfully
 range by about 25%. In the future, I would like to extend this further by somehow being able to
 extract the device's signal oscillation.
 <br>
------USING RESEARCH-----
+###USING RESEARCH
 <br>
 So after this, I decided to try to find ways that I could use the research If I had unlimited
 time. If I could map RSSI to distance the first thing I could do was determine If a change in
@@ -95,7 +95,7 @@ you see the signal rise, then drop again, you know the user passed the device an
 perpendicular to them so you loop back around and determine the heading of the device and so
 on.
 <br>
------IMPLEMENTATION-----
+###IMPLEMENTATION
 <br>
 I used flutter which was great for UI but caused a lot of problems when implementing everything else. The Bluetooth Libaray required a whole nother wrapper class to deal with its problems. Then the shift to android X caused a whole nother set of problems since sometimes the library itself was shifted over but not the ones it depended on. And finally, the way that dart encodes to JSON is broken, doing
 nested toJson call should not break anything but it does so I had to make my own. All of these
