@@ -1,5 +1,4 @@
 # Leashed
-<br>
 
 <p float="left">
   <img src="https://media.giphy.com/media/S8lbi2cusC5gVC0xOS/giphy.gif"/>
